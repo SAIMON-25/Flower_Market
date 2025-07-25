@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="icons8-camellia-48.png"
+      type="image/x-icon"
+    />
+    <!-- font Awasome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- style.css file -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
     <title>FlowerShop</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="bg-sky-100">
+    <header>
+      <nav class="max-w-6xl mx-auto border flex justify-between mt-4 ">
+        <figure>
+          <img src="./assets/logo.png" alt="" />
+        </figure>
+        <div class="flex justify-center items-center gap-12">
+          <ul class="hidden sm:flex gap-12 group">
+            <li
+              class="opacity-100 group-hover:opacity-50 hover:!opacity-100 transition"
+            >
+              Home
+            </li>
+            <li class="opacity-100 group-hover:opacity-50 hover:!opacity-100 transition">Shop</li>
+            <li class="opacity-100 group-hover:opacity-50 hover:!opacity-100 transition">About Us</li>
+          </ul>
+          <div class="flex justify-center items-center gap-2.5">
+            <img class="w-6 h-6" src="./assets/trolley.png" alt="" />
+            <span>Cart ($56)</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
